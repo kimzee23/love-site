@@ -2,9 +2,398 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>$Title$</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Love Story | [ Arike ]</title>
+  <link rel="stylesheet" href="/src/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Quicksand:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-$END$
+<!-- Background Music (Optional) -->
+<audio id="bg-music" loop preload="auto">
+  <source src="/src/audio/Kiss%20Daniel%20%20Mama%20%5BOfficial%20Video%5D,%20Kizz%20Daniel.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+<div class="music-control">
+  <button id="music-toggle"><i class="fas fa-music"></i> <span>Music</span></button>
+</div>
+
+<!-- Landing Page -->
+<section id="landing" class="page active">
+  <div class="landing-content">
+    <div class="floating-hearts">
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+      <div class="heart"></div>
+    </div>
+    <h1 class="main-title">This website exists<br>because you exist in my life.</h1>
+    <p class="subtitle">Scroll slowly… this is our journey.</p>
+    <button class="start-btn" id="start-journey">Start Our Journey <i class="fas fa-heart"></i></button>
+  </div>
+  <div class="scroll-hint">
+    <i class="fas fa-chevron-down"></i>
+  </div>
+</section>
+
+<!-- How We Met -->
+<section id="how-we-met" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-calendar-heart"></i> How We Met</h2>
+      <div class="section-date">November, 22, 2025</div>
+    </div>
+    <div class="story-content">
+      <div class="story-image">
+        <div class="image-placeholder">
+          <i class="fas fa-heart"></i>
+          <img src="/src/img/domino.webp" alt="">
+        </div>
+      </div>
+      <div class="story-text">
+        <p class="story-opening">I didn't know that day would change my life…</p>
+        <p>But somehow, you walked in and everything made sense.</p>
+
+        <div class="memory-details">
+          <div class="memory-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h3>Where we met</h3>
+              <p>Domino's Pizza</p>
+            </div>
+          </div>
+          <div class="memory-item">
+            <i class="fas fa-clock"></i>
+            <div>
+              <h3>Time</h3>
+              <p>2PM</p>
+            </div>
+          </div>
+          <div class="memory-item">
+            <i class="fas fa-star"></i>
+            <div>
+              <h3>What I noticed first</h3>
+              <p>Your cute innocent face, come on you are so beautiful.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="quote-box">
+          <p>"I felt like I have seen a wife at the same time a soulmate"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Growth -->
+<section id="our-growth" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-seedling"></i> Our Growth</h2>
+      <p class="section-subtitle">From first moments to lasting love</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-date">November,19th,2025</div>
+        <div class="timeline-content">
+          <h3>First Conversation</h3>
+          <p>Just talking about life and future plans</p>
+        </div>
+        <div class="timeline-icon">
+          <i class="fas fa-comments"></i>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">November,22nd,2025</div>
+        <div class="timeline-content">
+          <h3>First Laugh Together</h3>
+          <p>You made a joke about me being shy and cute at the same  time</p>
+        </div>
+        <div class="timeline-icon">
+          <i class="fas fa-laugh-beam"></i>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">November,23rd,2025</div>
+        <div class="timeline-content">
+          <h3>When I Knew</h3>
+          <p>The moment I realized loving you felt natural,
+            like my heart had finally found its home.</p>
+        </div>
+        <div class="timeline-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-date">November,29th,2025</div>
+        <div class="timeline-content">
+          <h3>Overcoming Together</h3>
+          <p>A challenge that tested us, but choosing each other made us stronger than it ever could</p>
+        </div>
+<!--        <div class="timeline-icon">-->
+          <i class="fas fa-hands-helping"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="growth-quote">
+      <p>And through it all, we grew. Not just together, but because of each other.</p>
+    </div>
+
+
+</section>
+<!-- Our Memories Gallery -->
+<section id="our-memories" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-images"></i> Our Beautiful Memories</h2>
+      <p class="section-subtitle">Moments captured in time, forever in my heart</p>
+    </div>
+
+    <div class="photo-gallery">
+      <div class="gallery-grid">
+        <!-- Memory 1 -->
+        <div class="memory-card">
+          <div class="memory-image">
+            <img src="/src/img/D2.jpeg" alt="Our first date" onerror="this.src='https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+            <div class="memory-overlay">
+              <div class="memory-date">Nov 22, 2025</div>
+              <h3>Our First Meeting</h3>
+              <p>The day everything changed</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 2 -->
+        <div class="memory-card">
+          <div class="memory-image">
+            <img src="/src/img/D5.jpeg" alt="First laugh together" onerror="this.src='https://images.unsplash.com/photo-1512850183-6d8b49e2c3c9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+            <div class="memory-overlay">
+              <div class="memory-date">Dec 12, 2025</div>
+              <h3> Real Laugh</h3>
+              <p>When when u make that funny face lol...</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 3 -->
+        <div class="memory-card">
+          <div class="memory-image">
+            <img src="/src/img/D3.jpeg" alt="Special moment" onerror="this.src='https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+            <div class="memory-overlay">
+              <div class="memory-date">Dec 21st, 2025</div>
+              <h3>Pizza Date Again</h3>
+              <p>You love pizza sha</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 4 -->
+        <div class="memory-card">
+          <div class="memory-image">
+            <img src="/src/img/D1.jpeg" alt="Happy moment" onerror="this.src='https://images.unsplash.com/photo-1542037104857-ffbb0b9155fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+            <div class="memory-overlay">
+              <div class="memory-date">January 17 , 2026</div>
+              <h3>Movie Night</h3>
+              <p>One of favorite night</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Memory 5 -->
+        <div class="memory-card">
+          <div class="memory-image">
+            <img src="/src/img/D4.jpeg" alt="Quiet moment" onerror="this.src='https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80'">
+            <div class="memory-overlay">
+              <div class="memory-date">January 31, 2026</div>
+              <h3>Fav mi</h3>
+              <p>When words weren't needed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="memory-quote">
+      <p>"Every moment with you becomes a beautiful memory I'll cherish forever."</p>
+    </div>
+  </div>
+</section>
+<!-- What I Love About You -->
+<section id="what-i-love" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-heart-circle-check"></i> What I Love About <b>Arike mi</b></h2>
+      <p class="section-subtitle">Just a few of the countless reasons</p>
+    </div>
+
+    <div class="love-reasons">
+      <!-- Reasons will be generated by JavaScript -->
+    </div>
+
+    <div class="infinite-love">
+      <p>And even this list will never be complete.</p>
+      <div class="heart-pulse">
+        <i class="fas fa-heart"></i>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Our Future -->
+<section id="our-future" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-clouds"></i> Our Future</h2>
+      <p class="section-subtitle">Dreams I see with you</p>
+    </div>
+
+    <div class="future-dreams">
+      <div class="dream-card">
+        <div class="dream-icon">
+          <i class="fas fa-plane"></i>
+        </div>
+        <h3>Places to Explore</h3>
+        <p>Dreaming of exploring the world together, from Doha to Paris, Dubai, Santorini, London, and every beautiful place our love takes us</p>
+      </div>
+
+      <div class="dream-card">
+        <div class="dream-icon">
+          <i class="fas fa-home-heart"></i>
+        </div>
+        <h3>Home Together</h3>
+        <p>Dreaming of a life where we build, grow, and choose each other every single day</p>
+      </div>
+
+      <div class="dream-card">
+        <div class="dream-icon">
+          <i class="fas fa-star-and-crescent"></i>
+        </div>
+        <h3>Moments to Share</h3>
+        <p>The future moments I look forward to most are the ones where it’s just us—laughing, growing, and building our forever together.</p>
+      </div>
+    </div>
+
+    <div class="future-promise">
+      <p>No matter what the future holds, I know one thing for certain:</p>
+      <p class="promise-text">I want to face it all with you by my side.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Love Letter -->
+<section id="love-letter" class="page">
+  <div class="container">
+    <div class="letter-container">
+      <div class="letter-header">
+        <div class="letter-date">February,2nd,2026 </div>
+        <h2>My Dearest Arike,</h2>
+      </div>
+
+      <div class="letter-body">
+        <p class="typing-text" id="letter-content">
+<!--          [Your heartfelt letter text will appear here with typing animation]-->
+        </p>
+      </div>
+
+      <div class="letter-footer">
+        <p class="signature">Forever yours,</p>
+        <p class="signature-name">Omokolajo</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Countdown -->
+<section id="countdown" class="page">
+  <div class="container">
+    <div class="section-header">
+      <h2><i class="fas fa-hourglass-half"></i> Counting Every Moment</h2>
+    </div>
+
+    <div class="countdown-container">
+      <div class="countdown-box">
+        <div class="countdown-value" id="days">0</div>
+        <div class="countdown-label">Days</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-value" id="hours">0</div>
+        <div class="countdown-label">Hours</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-value" id="minutes">0</div>
+        <div class="countdown-label">Minutes</div>
+      </div>
+      <div class="countdown-box">
+        <div class="countdown-value" id="seconds">0</div>
+        <div class="countdown-label">Seconds</div>
+      </div>
+    </div>
+
+    <div class="countdown-text">
+      <p>Until Next Special Date: Anniversary:22nd,November/Birthday: 27th,Dec</p>
+      <p class="alternate-text">Or if you prefer: <button id="toggle-countdown">Days since you became my person</button></p>
+    </div>
+  </div>
+</section>
+
+<!-- Final Promise -->
+<section id="final-promise" class="page">
+  <div class="container">
+    <div class="promise-content">
+      <h2 class="promise-title">My Promise to You</h2>
+
+      <div class="promises">
+        <div class="promise-item">
+          <i class="fas fa-hand-holding-heart"></i>
+          <p>I promise to choose you, every single day.</p>
+        </div>
+        <div class="promise-item">
+          <i class="fas fa-heart-circle-plus"></i>
+          <p>I promise to grow with you through all seasons of life.</p>
+        </div>
+        <div class="promise-item">
+          <i class="fas fa-volume-up"></i>
+          <p>I promise to love you loudly in joy and quietly in comfort.</p>
+        </div>
+        <div class="promise-item">
+          <i class="fas fa-infinity"></i>
+          <p>I promise that my love for you will be a constant in an ever-changing world.</p>
+        </div>
+      </div>
+
+      <div class="final-choice">
+        <p>With all my heart,</p>
+        <button class="final-btn" id="choose-you">
+          I Choose You <i class="fas fa-heart"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Navigation -->
+<nav class="page-nav">
+  <ul>
+    <li><a href="#landing" class="nav-dot active" data-page="landing"><span>Home</span></a></li>
+    <li><a href="#how-we-met" class="nav-dot" data-page="how-we-met"><span>How We Met</span></a></li>
+    <li><a href="#our-growth" class="nav-dot" data-page="our-growth"><span>Our Growth</span></a></li>
+    <li><a href="#what-i-love" class="nav-dot" data-page="what-i-love"><span>What I Love</span></a></li>
+    <li><a href="#our-future" class="nav-dot" data-page="our-future"><span>Our Future</span></a></li>
+    <li><a href="#love-letter" class="nav-dot" data-page="love-letter"><span>Love Letter</span></a></li>
+    <li><a href="#countdown" class="nav-dot" data-page="countdown"><span>Countdown</span></a></li>
+    <li><a href="#final-promise" class="nav-dot" data-page="final-promise"><span>My Promise</span></a></li>
+  </ul>
+</nav>
+
+<script src="/src/script.js"></script>
 </body>
 </html>
